@@ -33,16 +33,16 @@ export default function Hero() {
       <div className="hero-content absolute inset-0 flex items-center justify-center">
         <div className="container mx-auto px-4 text-center z-10">
           <motion.h1 
-            className="font-orbitron text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight"
+            className="font-orbitron text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight text-white"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            Navigating the <span className="text-gradient">Cosmic Frontier</span> of AI
+            Navigating the <span className="text-gradient glow">Cosmic Frontier</span> of AI
           </motion.h1>
           
           <motion.p 
-            className="text-xl md:text-2xl max-w-3xl mx-auto mb-10 text-opacity-90 text-white"
+            className="text-xl md:text-2xl max-w-3xl mx-auto mb-10 text-white font-medium"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.3 }}
@@ -58,14 +58,14 @@ export default function Hero() {
           >
             <button 
               onClick={scrollToServices}
-              className="px-8 py-4 bg-primary hover:bg-opacity-80 rounded-full font-orbitron text-lg font-medium transition-all transform hover:-translate-y-1 hover:shadow-lg glow"
+              className="px-8 py-4 bg-primary hover:bg-opacity-80 rounded-full font-orbitron text-lg font-medium transition-all transform hover:-translate-y-1 hover:shadow-lg glow text-white"
             >
               Explore Solutions
             </button>
             
             <button 
               onClick={scrollToContact}
-              className="px-8 py-4 bg-transparent border-2 border-secondary hover:bg-secondary hover:bg-opacity-20 rounded-full font-orbitron text-lg font-medium transition-all transform hover:-translate-y-1"
+              className="px-8 py-4 bg-transparent border-2 border-white hover:bg-white hover:bg-opacity-10 rounded-full font-orbitron text-lg font-medium transition-all transform hover:-translate-y-1 text-white"
             >
               Contact Us
             </button>
