@@ -70,12 +70,11 @@ export default function BlackHole() {
       }
     };
 
-    // Get particle color based on distance
+    // Get particle color based on distance - now using grayscale for realism
     const getParticleColor = (distance: number) => {
-      const hue = 270 - (distance / 300) * 80; // Range from purple to blue
-      const saturation = 70 + (distance / 300) * 30; // More saturated closer to center
-      const lightness = 50 + (distance / 300) * 20; // Brighter farther from center
-      return `hsl(${hue}, ${saturation}%, ${lightness}%)`;
+      // Use only grayscale for a more realistic black hole effect
+      const brightness = Math.min(20 + (distance / 400) * 80, 90); // Dark near center, slightly brighter at edges
+      return `rgb(${brightness}, ${brightness}, ${brightness})`;
     };
 
     // Animate the black hole
@@ -86,29 +85,29 @@ export default function BlackHole() {
       const centerX = canvas.width / 2;
       const centerY = canvas.height / 2;
 
-      // Draw black hole core
+      // Draw black hole core - true black with minimal glow
       const gradient = ctx.createRadialGradient(
         centerX, centerY, 5,
         centerX, centerY, 60
       );
       gradient.addColorStop(0, 'rgba(0, 0, 0, 1)');
-      gradient.addColorStop(0.4, 'rgba(97, 55, 177, 0.8)');
-      gradient.addColorStop(0.8, 'rgba(97, 55, 177, 0.2)');
-      gradient.addColorStop(1, 'rgba(97, 55, 177, 0)');
+      gradient.addColorStop(0.4, 'rgba(0, 0, 0, 0.9)');
+      gradient.addColorStop(0.8, 'rgba(20, 20, 20, 0.2)');
+      gradient.addColorStop(1, 'rgba(0, 0, 0, 0)');
 
       ctx.beginPath();
       ctx.arc(centerX, centerY, 60, 0, Math.PI * 2);
       ctx.fillStyle = gradient;
       ctx.fill();
 
-      // Draw accretion disk
+      // Draw accretion disk - more realistic with dark grays
       const diskGradient = ctx.createRadialGradient(
         centerX, centerY, 70,
         centerX, centerY, 150
       );
-      diskGradient.addColorStop(0, 'rgba(97, 55, 177, 0.5)');
-      diskGradient.addColorStop(0.5, 'rgba(78, 175, 225, 0.3)');
-      diskGradient.addColorStop(1, 'rgba(78, 175, 225, 0)');
+      diskGradient.addColorStop(0, 'rgba(30, 30, 30, 0.7)');
+      diskGradient.addColorStop(0.5, 'rgba(50, 50, 50, 0.3)');
+      diskGradient.addColorStop(1, 'rgba(20, 20, 20, 0)');
 
       ctx.save();
       ctx.translate(centerX, centerY);

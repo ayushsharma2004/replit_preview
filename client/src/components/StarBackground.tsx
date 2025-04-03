@@ -48,14 +48,14 @@ export default function StarBackground() {
   }, []);
 
   const getStarColor = () => {
-    // Generate realistic star colors - white, blue-white, or slight yellow/orange
+    // Generate realistic grayscale star colors - pure white to light gray
     const colors = [
       '#FFFFFF', // White
-      '#F8F7FF', // Slight blue-white
-      '#FFF4EA', // Slight yellow-white
-      '#FFE9D0', // Slight orange-white
-      '#E8F4FF', // Pale blue
-      '#CAE8FF'  // Light blue
+      '#F0F0F0', // Light gray
+      '#E0E0E0', // Light gray
+      '#D0D0D0', // Light gray
+      '#C0C0C0', // Medium gray
+      '#B0B0B0'  // Medium gray
     ];
     return colors[Math.floor(Math.random() * colors.length)];
   };
@@ -96,14 +96,14 @@ export default function StarBackground() {
       className="fixed top-0 left-0 w-full h-full z-0 pointer-events-none bg-black"
     >
       {generateStars()}
-      {/* Add subtle nebula effect */}
+      {/* Add subtle nebula effect - in grayscale */}
       <div className="absolute w-full h-full opacity-20"
            style={{
              background: `
-               radial-gradient(ellipse at 20% 20%, rgba(97, 55, 177, 0.2) 0%, transparent 70%),
-               radial-gradient(ellipse at 80% 80%, rgba(78, 175, 225, 0.2) 0%, transparent 70%),
-               radial-gradient(ellipse at 60% 30%, rgba(123, 89, 198, 0.1) 0%, transparent 70%),
-               radial-gradient(ellipse at 40% 70%, rgba(58, 125, 225, 0.1) 0%, transparent 70%)
+               radial-gradient(ellipse at 20% 20%, rgba(40, 40, 40, 0.1) 0%, transparent 70%),
+               radial-gradient(ellipse at 80% 80%, rgba(50, 50, 50, 0.1) 0%, transparent 70%),
+               radial-gradient(ellipse at 60% 30%, rgba(30, 30, 30, 0.08) 0%, transparent 70%),
+               radial-gradient(ellipse at 40% 70%, rgba(35, 35, 35, 0.08) 0%, transparent 70%)
              `
            }}
       ></div>
