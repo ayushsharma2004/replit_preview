@@ -6,16 +6,16 @@ export default function About() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <motion.h2 
-            className="font-orbitron text-4xl font-bold mb-3 inline-block"
+            className="font-orbitron text-4xl font-bold mb-3 inline-block text-white"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            About <span className="text-gradient">Space Marvel</span>
+            About <span className="silver-shine">Space Marvel</span>
           </motion.h2>
           <motion.div 
-            className="h-1 w-20 bg-secondary mx-auto rounded"
+            className="h-1 w-20 bg-white mx-auto rounded"
             initial={{ scaleX: 0 }}
             whileInView={{ scaleX: 1 }}
             viewport={{ once: true }}
@@ -31,14 +31,14 @@ export default function About() {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <h3 className="font-orbitron text-2xl font-semibold mb-4 text-secondary">Venturing Beyond Conventional AI</h3>
-            <p className="mb-6 text-lg leading-relaxed">
+            <h3 className="font-orbitron text-2xl font-semibold mb-4 silver-shine">Venturing Beyond Conventional AI</h3>
+            <p className="mb-6 text-lg leading-relaxed text-white">
               At Space Marvel, we explore the uncharted territories of artificial intelligence, much like astronomers probe the mysteries of black holes and distant galaxies.
             </p>
-            <p className="mb-6 text-lg leading-relaxed">
+            <p className="mb-6 text-lg leading-relaxed text-white">
               Founded by a team of AI researchers and space enthusiasts, we combine cutting-edge technology with cosmic inspiration to deliver solutions that transform businesses across industries.
             </p>
-            <p className="mb-8 text-lg leading-relaxed">
+            <p className="mb-8 text-lg leading-relaxed text-white">
               Our mission is to harness the infinite possibilities of AI, creating technologies that seem like marvels from a distant future.
             </p>
             <div className="flex flex-wrap gap-4">
@@ -50,11 +50,11 @@ export default function About() {
                 transition={{ duration: 0.4, delay: 0.3 }}
               >
                 <div className="w-12 h-12 rounded-full bg-primary bg-opacity-20 flex items-center justify-center mr-3">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-secondary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                   </svg>
                 </div>
-                <span className="font-orbitron">Innovation-Driven</span>
+                <span className="font-orbitron text-white">Innovation-Driven</span>
               </motion.div>
               
               <motion.div 
@@ -65,11 +65,11 @@ export default function About() {
                 transition={{ duration: 0.4, delay: 0.5 }}
               >
                 <div className="w-12 h-12 rounded-full bg-primary bg-opacity-20 flex items-center justify-center mr-3">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-secondary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
                   </svg>
                 </div>
-                <span className="font-orbitron">AI Excellence</span>
+                <span className="font-orbitron text-white">AI Excellence</span>
               </motion.div>
               
               <motion.div 
@@ -80,11 +80,11 @@ export default function About() {
                 transition={{ duration: 0.4, delay: 0.7 }}
               >
                 <div className="w-12 h-12 rounded-full bg-primary bg-opacity-20 flex items-center justify-center mr-3">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-secondary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
                   </svg>
                 </div>
-                <span className="font-orbitron">Collaborative</span>
+                <span className="font-orbitron text-white">Collaborative</span>
               </motion.div>
             </div>
           </motion.div>
