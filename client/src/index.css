@@ -93,6 +93,11 @@
   .glow {
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.5), 0 0 30px rgba(200, 200, 200, 0.3);
   }
+  
+  .orange-glow {
+    box-shadow: 0 0 40px 5px rgba(255, 140, 50, 0.4), 
+                0 0 80px 10px rgba(255, 100, 30, 0.2);
+  }
 
   .card-hover {
     @apply transition-all duration-300 ease-in-out;
