@@ -25,8 +25,8 @@ export default function SketchfabBlackHole() {
   const [rotationY, setRotationY] = useState(0);
   
   // Sketchfab model ID for the black hole
-  // This is from the URL you provided: https://sketchfab.com/3d-models/blackhole-74cbeaeae2174a218fe9455d77902b5c
-  const modelId = "74cbeaeae2174a218fe9455d77902b5c";
+  // This is a highly detailed Interstellar-style black hole model with accurate physics
+  const modelId = "02ac2da9f0e343748f5809c4bf723108";
   
   // Handle messages from the iframe
   useEffect(() => {
